@@ -3,7 +3,7 @@ import axios from "axios";
 function getAPI() {
 
     let API_PATH = axios.create({
-        baseURL: 'https://lil-market-system.vercel.app/api/',
+        baseURL: 'http://45.145.164.240:8000/api',
     })
 
     const dadosDeAutenticacao =  JSON.parse(localStorage.getItem('dadosDeAutenticacao'));
