@@ -58,7 +58,7 @@ export const Cart = () =>{
         try {
             let response = await api.confirmPurchase();
             if (response.status === 200) {                
-                setSaldoAtual(saldoAtual - subtotalCart.subtotal);
+                setSaldoAtual(parseFloat((saldoAtual - subtotalCart.subtotal).toFixed(2)));
                 setTimeout(() => {
                     navigate('/finish');
                 }, 1000);
