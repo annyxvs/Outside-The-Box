@@ -1,0 +1,119 @@
+.auth-page{
+    header{
+        padding: 3rem;
+    }
+
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .vector{
+        width: 100vw;
+    }
+
+    .alerta{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+    @-webkit-keyframes slide-bottom {
+        0% {
+          -webkit-transform: translateY(-100px);
+                  transform: translateY(-100px);
+        }
+        100% {
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+        }
+      }
+      @keyframes slide-bottom {
+        0% {
+          -webkit-transform: translateY(-100px);
+                  transform: translateY(-100px);
+        }
+        100% {
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+        }
+      }
+      
+    }
+}
+
+.main-auth{
+    display: flex;
+    flex-direction: column;
+
+    .text{
+     font-size: 2rem;
+
+     -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+     animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+      
+     @-webkit-keyframes tracking-in-expand {
+      0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+      }
+      40% {
+        opacity: 0.6;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes tracking-in-expand {
+      0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+      }
+      40% {
+        opacity: 0.6;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+    }
+
+    .input-Wrapp{
+        margin-top: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    p{
+        font-weight: 400;
+        font-size: 0.75rem;
+    }
+
+    .quest{
+        text-align: end;
+        span{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    .button-Wrapp{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            cursor: pointer;
+        }
+    }
+}
